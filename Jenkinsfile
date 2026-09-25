@@ -32,8 +32,8 @@ pipeline {
         stage('Docker Push') {
             steps {
                 sh '''
-                docker push saranya751/threetier-frontend:${BUILD_NUMBER}
-                docker push saranya751/threetier-backend:${BUILD_NUMBER}
+                docker push saranya751/threetier-frontend:latest:${BUILD_NUMBER}
+                docker push saranya751/threetier-backend:latest:${BUILD_NUMBER}
                 '''
             }
         }
